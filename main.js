@@ -1,6 +1,5 @@
 song1="";
 song2="";
-song="";
 song1_status="";
 song2_status="";
 leftWristX=0;
@@ -34,25 +33,30 @@ function draw(){
     image(video,0,0,400,300);
 
     fill("#FF0000");
-    Stroke("#FF0000");
+    stroke("#FF0000");
 
-    if(video = leftWrist ){
-      song1.isplaying();
-    }
-
-    else{
-     song2.isplaying(); 
-    }
-
+      song1_status=song1.isPlaying();
+      song2_status=song2.isPlaying();
+    
     if(scoreleftWrist > 0.2 ){
       circle(leftWristX,leftWristY,20);
       song2.stop();
-      }
 
-      if(song1= false){
-        song=document.getElementById("song_name").innerHTML= "Dil ha chhotta sa choti si assha" + "song is playing";
+      if(song2_status== false){
+        song1.play();
+        document.getElementById("song_name").innerHTML= "Param Sundari" + " song is playing";
       }
+  }
+
 }
+
+function play(){
+  song.play();
+  song.setVolume(1);
+  song.rate(1);
+}
+
+
 
 function gotPoses(results){
   if(results.length > 0 ){

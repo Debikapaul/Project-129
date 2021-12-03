@@ -1,6 +1,8 @@
 song1="";
 song2="";
 song="";
+song1_status="";
+song2_status="";
 leftWristX=0;
 leftWristy=0;
 rightWristX=0;

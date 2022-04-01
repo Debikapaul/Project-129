@@ -42,7 +42,7 @@ function draw(){
       circle(leftWristX,leftWristY,20);
       song2.stop();
 
-      if(song2_status== false){
+      if(song1_status = song1.isPlaying()){
         song1.play();
         document.getElementById("song_name").innerHTML= "Param Sundari" + " song is playing";
       }

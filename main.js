@@ -42,13 +42,13 @@ function draw(){
       circle(leftWristX,leftWristY,20);
       song2.stop();
 
-      if(song1_status = song1.isPlaying()){
+    if(song1_status == false){ 
         song1.play();
-        document.getElementById("song_name").innerHTML= "Param Sundari" + " song is playing";
-      }
+        document.getElementById("song").innerHTML = "Playing - Param Sundari Song"
+    }
   }
-
 }
+if(song1_status == false) { song1.play(); document.getElementById("song").innerHTML = "Playing - Param Sundari Song" }
 
 function play(){
   song.play();

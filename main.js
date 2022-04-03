@@ -44,18 +44,16 @@ function draw(){
 
     if(song1_status == false){ 
         song1.play();
-        document.getElementById("song").innerHTML = "Playing - Param Sundari Song"
+        document.getElementById("song_name").innerHTML = "Playing - Param Sundari Song";
     }
   }
 }
-if(song1_status == false) { song1.play(); document.getElementById("song").innerHTML = "Playing - Param Sundari Song" }
 
 function play(){
   song.play();
   song.setVolume(1);
   song.rate(1);
 }
-
 
 
 function gotPoses(results){
